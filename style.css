@@ -21,6 +21,84 @@ header {
   padding-right: 10%;
   padding-bottom: 12px;
   padding-top: 28px;
+
+  /* mobile menu changes */
+  position: relative;
+}
+
+/*  mobile menu changes */
+.menuIcon[name="cross"] {
+  display: none;
+}
+
+.menuIcon {
+  z-index: 999;
+}
+
+.closebtn {
+  position: fixed;
+  right: 15%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 73px 20px 0 20px;
+  transform: translateX(100%);
+  transition: all 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menuList {
+  /* display: none; */
+
+  list-style: none;
+}
+
+.menuList li {
+  letter-spacing: 0;
+  text-align: left;
+  list-style: none;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #6f6c6b;
+  text-decoration: none;
+}
+
+.menuList a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.active .navlinks {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.active .menuIcon[name="cross"] {
+  display: block;
+}
+
+.active .menuIcon[name="hamburger"] {
+  display: none;
 }
 
 .logo {
@@ -31,10 +109,6 @@ header {
   line-height: 24px;
   color: #fff;
   transition: transform 1s;
-}
-
-.logo:hover {
-  transform: rotate(360deg);
 }
 
 .Headline {
@@ -384,6 +458,10 @@ hr {
   color: #fff;
 }
 
+.menuList:last-child li:last-child {
+  display: none;
+}
+
 .Contact {
   display: flex;
   flex-direction: column;
@@ -454,10 +532,6 @@ textarea {
   border-radius: 10px;
 }
 
-.menuList {
-  display: none;
-}
-
 #w2 #w2dt,
 #w3 #w3dt,
 #w4 #w4dt,
@@ -475,10 +549,27 @@ textarea {
     display: none;
   }
 
+  .navlinks {
+    display: flex;
+    align-items: center;
+    height: auto;
+    transform: translateX(0);
+    padding: 15px 20px 0 20px;
+    top: 0;
+    width: 40%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: none;
+  }
+
   .menuList {
     display: flex;
     gap: 32px;
     list-style: none;
+
+    /* mobile menu change */
+    max-height: 50px;
   }
 
   .menuList li {
@@ -498,6 +589,10 @@ textarea {
     line-height: 133%;
     color: #fff;
     text-decoration: none;
+  }
+
+  .menuList:last-child li:last-child {
+    display: block;
   }
 
   .Headline {
