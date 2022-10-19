@@ -9,19 +9,30 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header">
         <a href="#" class="logo">karan</a>
-        <img src="SVG/Icon - Menu.svg" alt="menu" class="menuIcon" />
-        <ul class="menuList">
-          <li>Portfolio</li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          <li>
-            <a href="mailto:karanjain2212@gmail.com"
-              ><img src="SVG/Mail.svg" alt="mail me"
-            /></a>
-          </li>
-        </ul>
+
+        <img src="SVG/Icon - Menu.svg" class="menuIcon" name="hamburger" />
+        <img
+          src="SVG/cross.svg"
+          class="menuIcon closebtn"
+          id="cross"
+          name="cross"
+        />
+
+        <div class="navlinks">
+          <ul class="menuList">
+            <li><a href="#works" class="scroll-links">Portfolio</a></li>
+            <li><a href="#about" class="scroll-links">About</a></li>
+            <li><a href="#Contact" class="scroll-links">Contact</a></li>
+            <li>
+              <a href="mailto:karanjain2212@gmail.com"
+                ><img src="SVG/Mail.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
       </header>
       <section class="Headline">
         <div class="heading">
@@ -75,7 +86,7 @@
           </ul>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div class="RecentworkHeading">
           <h1>My Recent Works</h1>
           <hr />
@@ -347,5 +358,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
