@@ -250,7 +250,9 @@ hr {
   font-size: 17px;
   line-height: 141%;
   color: #fff;
-  transition: background-color 0.5s ease-in, transform 0.5s ease-in-out,
+  transition:
+    background-color 0.5s ease-in,
+    transform 0.5s ease-in-out,
     color 0.5s ease-in-out;
 }
 
@@ -459,6 +461,18 @@ hr {
   color: #fff;
 }
 
+.project-tools ul li {
+  margin-right: 12px;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  border: 1px solid rgba(223, 225, 230, 1);
+  font-family: "Poppins", sans-serif;
+  color: #3c3a39;
+  list-style: none;
+}
+
 .menuList:last-child li:last-child {
   display: none;
 }
@@ -544,18 +558,17 @@ textarea {
 .cards .btndt {
   display: none;
 }
+
 /* modal  */
 
 .modal {
   height: 100vh;
-
   display: none;
   position: fixed;
   z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
-
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
@@ -565,9 +578,7 @@ textarea {
   margin: 1% auto;
   padding: 16px;
   width: 95%;
-
   background-color: #fefefe;
-
   border: 1px solid #888;
 }
 
@@ -595,7 +606,6 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
   width: 100%;
   padding-left: 2%;
   margin-bottom: 20px;
@@ -608,11 +618,12 @@ textarea {
 }
 
 .project-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
   /* Neutrals/N800 */
@@ -629,19 +640,6 @@ textarea {
   align-items: flex-start;
   padding-left: 0;
 }
-.project-tools ul li {
-  margin-right: 12px;
-  padding: 10px 12px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  border: 1px solid rgba(223, 225, 230, 1);
-
-  font-family: "Poppins", sans-serif;
-
-  color: #3c3a39;
-  list-style: none;
-}
 
 .modal-bottom {
   flex-direction: column;
@@ -649,11 +647,8 @@ textarea {
   margin-bottom: 0;
   height: auto;
   padding-left: 2%;
-
   display: flex;
-
   align-items: flex-start;
-
   width: 100%;
 }
 
@@ -663,6 +658,7 @@ textarea {
   overflow: hidden;
   max-width: 687px;
 }
+
 .project-img img {
   width: 100%;
   height: 100%;
@@ -672,11 +668,8 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-
   display: flex;
-
   align-items: flex-start;
-
   height: 100%;
 }
 
@@ -685,26 +678,23 @@ textarea {
   font-size: 16px;
   line-height: 24px;
 }
+
 .project-desc {
   margin-bottom: 30px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   color: #344563;
 }
 
 .project-links {
   margin-bottom: 5px;
-
   display: flex;
   flex-direction: row;
-
   align-items: flex-start;
   width: 100%;
-
   justify-content: space-between;
   gap: 10px;
 }
@@ -712,20 +702,17 @@ textarea {
 #project-link-1,
 #project-link-2 {
   margin-right: 0;
-  padding: 10px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
   border: 1.5px solid #f55800;
-
   font-family: "Inter", sans-serif;
-
   background: #f55800;
   color: #fff;
   text-decoration: none;
   height: 48px;
   width: 137px;
+
   /* left: 0px;
   top: 4px; */
 
@@ -789,6 +776,18 @@ textarea {
     line-height: 133%;
     color: #fff;
     text-decoration: none;
+  }
+
+  .project-tools ul li {
+    border: 1px solid rgba(223, 225, 230, 1);
+    margin-right: 12px;
+    padding: 10px 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3c3a39;
+    list-style: none;
   }
 
   .menuList:last-child li:last-child {
@@ -1011,13 +1010,16 @@ textarea {
     background-image: url("SVG/bgw2.svg");
     background-repeat: no-repeat;
     padding-top: 50%;
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
   #w4,
   #w1 {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 84.18%
@@ -1027,7 +1029,9 @@ textarea {
     /* background-image: url("SVG/w4bgdt.png"); */
     background-repeat: no-repeat;
     padding-top: 50%;
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
@@ -1057,7 +1061,9 @@ textarea {
     transition-duration: 1s;
     transition-timing-function: ease-in;
     transition-delay: o.5s; */
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
@@ -1156,6 +1162,7 @@ textarea {
     width: 100%;
     padding-left: 2%;
   }
+
   .modal-bottom {
     display: flex;
     flex-direction: row;
@@ -1184,18 +1191,6 @@ textarea {
     padding-left: 0;
   }
 
-  .project-tools ul li {
-    border: 1px solid rgba(223, 225, 230, 1);
-    margin-right: 12px;
-    padding: 10px 12px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #3c3a39;
-    list-style: none;
-  }
-
   .project-img {
     width: 49.5%;
     height: 100%;
@@ -1208,8 +1203,8 @@ textarea {
   }
 
   .project-title {
-    margin-bottom: 0px;
-    font-family: "Crete Round";
+    margin-bottom: 0;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -1231,13 +1226,13 @@ textarea {
   }
 
   /* .project-desc {
-  
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: #344563; 
+    color: #344563;
   } */
 
   .project-desc {
@@ -1265,19 +1260,15 @@ textarea {
     padding: 10px 12px;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-
     background: #f55800;
     color: #fff;
     text-decoration: none;
-
     line-height: 0px;
-
     height: 57px;
     width: 159px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 12px;
     font-size: 17px;
   }
