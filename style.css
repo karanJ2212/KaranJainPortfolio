@@ -250,7 +250,9 @@ hr {
   font-size: 17px;
   line-height: 141%;
   color: #fff;
-  transition: background-color 0.5s ease-in, transform 0.5s ease-in-out,
+  transition:
+    background-color 0.5s ease-in,
+    transform 0.5s ease-in-out,
     color 0.5s ease-in-out;
 }
 
@@ -1008,13 +1010,16 @@ textarea {
     background-image: url("SVG/bgw2.svg");
     background-repeat: no-repeat;
     padding-top: 50%;
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
   #w4,
   #w1 {
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 84.18%
@@ -1024,7 +1029,9 @@ textarea {
     /* background-image: url("SVG/w4bgdt.png"); */
     background-repeat: no-repeat;
     padding-top: 50%;
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
@@ -1054,7 +1061,9 @@ textarea {
     transition-duration: 1s;
     transition-timing-function: ease-in;
     transition-delay: o.5s; */
-    transition: background-image 0.5s ease-in, transform 0.5s ease-in,
+    transition:
+      background-image 0.5s ease-in,
+      transform 0.5s ease-in,
       border-radius 0.5s ease-in;
   }
 
@@ -1288,6 +1297,7 @@ textarea {
     font-size: 20px;
     line-height: 25px;
   }
+
   small {
     border: solid 1px red;
     display: block;
