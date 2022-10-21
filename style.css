@@ -1308,6 +1308,17 @@ textarea {
     font-size: 20px;
     line-height: 25px;
   }
+
+  .thankyou {
+    border: solid 1px green;
+    display: block;
+    color: green;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* modal end */
